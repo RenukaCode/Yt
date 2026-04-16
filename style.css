@@ -1,0 +1,60 @@
+.thumbnail{
+    width: 300px;
+    display: block;
+}
+
+.search-bar{
+    font-size: 15px;
+    margin-left: 30px;
+    display: block;
+}
+
+.div1{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+.box{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.thumb{
+    margin-bottom: 15px;
+}
+
+p{
+    margin-top: 0;
+}
+.profile{
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+.text{
+    display: inline-block;
+    width: 230px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.p1{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.p2, .p3{
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+.pro{
+    width: 100%;
+    border-radius: 40px;
+}
+
