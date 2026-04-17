@@ -1,6 +1,5 @@
 .thumbnail{
-    width: 300px;
-    display: block;
+    width: 100%;
 }
 
 .search-bar{
@@ -9,18 +8,14 @@
     display: block;
 }
 
-.div1{
-    width: 300px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 15px;
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 10px;
 }
-
 .box{
-    width: 300px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
+    width: 100%;
 }
 
 .thumb{
@@ -30,16 +25,18 @@
 p{
     margin-top: 0;
 }
-.profile{
-    display: inline-block;
-    width: 50px;
-    vertical-align: top;
-    margin-right: 15px;
+
+.pro-text{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 10px;
+}
+.pro{
+    width: 100%;
+    border-radius: 40px;
 }
 
 .text{
-    display: inline-block;
-    width: 230px;
     font-family: "Roboto", Arial, sans-serif;
 }
 
@@ -56,5 +53,27 @@ p{
 .pro{
     width: 100%;
     border-radius: 40px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+.left{
+    background-color: lightblue;
+    width: 150px;
+}
+
+.middle{
+    background-color: lightpink;
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 100px;
+    max-width: 400px;
+}
+.right{
+    background-color: lightgreen;
+    width: 200px;
 }
 
