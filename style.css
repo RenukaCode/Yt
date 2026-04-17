@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .thumbnail{
     width: 100%;
 }
@@ -61,16 +64,61 @@ p{
     height: 50px;
 }
 .left{
-    background-color: lightblue;
-    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    height: 30px;
+    margin-left:  20px;
+    margin-right: 20px;
+}
+
+.logo{
+    height: 100px;
+    /* margin-top: -30px; */
 }
 
 .middle{
-    background-color: lightpink;
     flex: 1;
     margin-left: 50px;
     margin-right: 100px;
-    max-width: 400px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+}
+
+.search-bar{
+    font-size: 16px;
+    font-family: "Roboto", Arial, sans-serif;
+    flex: 1;
+    height: 20px;
+    padding-left: 10px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: rgb(187, 187, 187);
+    border-style: solid;
+}
+
+.search-btn{
+    width: 50px;
+    height: 30px;
+}
+.search-img{
+    width: 24px;
+    
+}
+
+.voice-btn{
+    width: 36px;
+    height: 36px;
+    margin-left: 15px;
+}
+.voice-btn img{
+    width: 30px;
+    height: 30px;
+
 }
 .right{
     background-color: lightgreen;
