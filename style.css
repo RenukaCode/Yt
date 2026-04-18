@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding-top: 70px;
     padding-left: 220px;
+    background-color: rgb(196, 194, 194);
 }
 .thumbnail{
     width: 100%;
@@ -15,8 +16,8 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
     column-gap: 10px;
 }
 .box{
@@ -34,7 +35,7 @@ p{
 
 .pro-text{
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 36px 1fr;
     column-gap: 10px;
 }
 .pro{
@@ -49,10 +50,11 @@ p{
 .p1{
     font-weight: bold;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .p2, .p3{
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 0;
     margin-bottom: 6px;
 }
@@ -69,6 +71,7 @@ p{
     padding-right: 2px;
     padding-top: 1px;
     padding-bottom: 1px;
+    font-size: 12px;
 }
 .pro{
     width: 100%;
@@ -88,6 +91,7 @@ p{
     border-bottom-width: 1px;
     border-bottom-color: rgb(119, 119, 119);
     border-bottom-style: solid;
+    z-index: 10;
 }
 
 .notifications{
@@ -196,4 +200,91 @@ p{
 
 .icon{
     height: 24px;
+}
+
+.sidebar{
+    position: fixed;
+    background-color: white;
+    color: black;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: white;
+    border-right-width: 1px;
+    border-right-color: rgb(119, 119, 119);
+    border-right-style: solid;
+    z-index: 11;
+}
+
+.sidebar-item{
+    height: 45px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", Arial, sans-serif;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.sidebar-item:hover{
+     background-color: rgb(213, 211, 211);
+}
+
+.sidebar-item img{
+    height: 24px;
+}
+
+.sidebar-item div{
+    font-size: 14px;
+}
+
+.search-btn, .voice-btn{
+    position: relative;
+    cursor: pointer;
+}
+
+.search-btn .tool-tip, 
+.voice-btn .tool-tip{
+    position: absolute;
+    bottom: -28px;
+    background-color: gray;
+    color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease-in-out;
+    white-space: nowrap;
+}
+
+.search-btn:hover .tool-tip,
+.voice-btn:hover .tool-tip{
+    opacity: 1;
+}
+
+@media(max-width: 800px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 1000px){
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width:801px) and (max-width: 999px){
+      .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media(max-width: 800px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 }
