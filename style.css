@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    padding-top: 70px;
+    padding-left: 220px;
 }
 .thumbnail{
     width: 100%;
@@ -23,6 +25,7 @@ body{
 
 .thumb{
     margin-bottom: 15px;
+    position: relative;
 }
 
 p{
@@ -53,6 +56,20 @@ p{
     margin-top: 0;
     margin-bottom: 6px;
 }
+
+.time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    font-family: "Roboto", Arial, sans-serif;
+    border-radius: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
 .pro{
     width: 100%;
     border-radius: 40px;
@@ -60,8 +77,43 @@ p{
 
 .header{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(119, 119, 119);
+    border-bottom-style: solid;
+}
+
+.notifications{
+    position: relative;
+}
+
+.number3{
+    font-size: 11px;
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 50%;
+    top: -3px;
+    right: -3px;
+}
+
+.sidebar{
+    position: fixed;
+    background-color: black;
+    color: white;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    width: 200px;
 }
 .left{
     display: flex;
@@ -99,11 +151,18 @@ p{
     border-width: 1px;
     border-color: rgb(187, 187, 187);
     border-style: solid;
+    width: 0;
 }
 
 .search-btn{
     width: 50px;
-    height: 30px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 1px;
+    border-color: rgb(187, 187, 187);
+    border-style: solid;
 }
 .search-img{
     width: 24px;
@@ -111,17 +170,30 @@ p{
 }
 
 .voice-btn{
-    width: 36px;
-    height: 36px;
-    margin-left: 15px;
-}
-.voice-btn img{
     width: 30px;
     height: 30px;
+    margin-left: 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 1px;
+    border-color: rgb(217, 214, 214);
+    border-style: solid;
+}
+.voice-img{
+    width: 20px;
+    height: 20px;
 
 }
 .right{
-    background-color: lightgreen;
-    width: 200px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-shrink: 0;
 }
 
+.icon{
+    height: 24px;
+}
